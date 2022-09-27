@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar text-info bg-dark ">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 text-info">Weather Dashboard</span>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="row mt-5">
+          <div class="col-sm-4">
+            <h1>Search for a city</h1>
+            <div class="input-group mb-3">
+              <button class="btn btn-outline-secondary" type="button" id="search">Search</button>
+              <input id = "cityInput" type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <h1>Current weather</h1>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title" id ="cityName"></h3>
+                <h4 class="card-subtitle mb-2 text-muted"id = "date"></h4>
+                <h4 class="card-subtitle mb-2 text-muted"id = "Temp"></h4>
+                <img src="" alt="" id = "icon">
+                <p class="card-text"id = "humidity"></p>
+                <p class="card-text"id = "windSpeed"></p>
+                <p class="card-text"id = "UV"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
